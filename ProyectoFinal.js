@@ -1,3 +1,5 @@
+
+
 //Ejemplo recursivo
 var res = fibonacci(3);
 console.log(res);
@@ -14,16 +16,16 @@ function fibonacci(n){
 
 
 
-  //Interativo ejemplo 3
+ //Interativo ejemplo 3
+ 
+function fibonacciInteractivo(n) {
+    let fib = [0, 1];
 
-  function fibonacciInteractivo(n)
-{
-    let fib = [0,1];
-
-    for(let i = 2; i <= n; i++)
-    {
-        fib[i] = fib[i-1] + fib[i-2];
+    for (let i = 2; i <= n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
     }
 
-    return fib[n];
+    return fib[n];
 }
+
+console.log(fibonacciInteractivo(5));
